@@ -1,0 +1,166 @@
+
+html {
+  box-sizing: border-box;
+
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+/* NAV BAR */
+
+header {
+    height: 100px;
+    background-color: #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    cursor: pointer;
+    padding: 0 2rem 0;
+    color: white;
+}
+
+
+nav {
+ 
+}
+
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px 20px 0;
+    transition: all 0.3s ease 0s;
+}
+
+ul li a:hover {
+    color: red;;
+    text-decoration: none;
+    padding: 0 20px 20px 0;
+    transition: all 0.3s ease 0s;
+}
+
+/* HERO DISPLAY */
+
+.hero-image-container {
+    background-image: 
+
+}
+
+
+
+
+
+
+
+
+/* FOUNDERS */
+
+.founders-container {
+    background-color: #284B63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.founders-image-container {
+    display: flex;
+    
+}
+
+
+
+
+
+/* HOW TO SUBMIT */
+
+.submit-container {
+    background-color: #D9D9D9;
+    
+}
+
+.submit-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.submit-steps-container {
+    display: flex;
+}
+
+
+
+/* SEND YOUR IDEA */
+
+.send-idea-container {
+    display: flex;
+    justify-content: center;
+    background-color: #3C6E71;
+}
+
+
+
+
+
+
+/* SUCCESS STORIES */
+
+.success-stories-container {
+    background-color: #C4C4C4;
+}
+
+.success-stories-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.success-stories-content-left {
+    diplay: flex;
+    align-items: flex-start;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 0;
+}
