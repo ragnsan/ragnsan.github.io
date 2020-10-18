@@ -27,8 +27,8 @@
     <h2>The Hotspot</h2>
 <nav>
     <ul>
-    <li><a href=" ">About us</a></li>
-    <li><a href=" ">Our story</a></li>
+    <li><a href=""#hero-image-container">About us</a></li>
+    <li><a href=".founders-container">Our story</a></li>
     <li><a href=" ">How it works</a></li>
     <li><a href=" ">Submit your idea</a></li>
     <li><a href=" ">Success stories</a></li>
@@ -43,7 +43,7 @@
 
 <!--HERO DISPLAY-->
 
-<div class="hero-image-container">
+<div id="hero-image-container">
     <div class="hero-image-text">
         <h1>The Hotspot</h1>
         <h2>Independent Review of Great Ideas<h2>
@@ -139,8 +139,27 @@
 
 </div>
 
-<form class="form-container">
+<form action="idea-submissions.html" method="GET" class="form-container">
 
+<div class="name-field">
+    <label for="name">Name</label>
+    <input name="name" id="name" type="text" required>
+</div>
+
+<div class="email-field">
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" required>
+</div>
+
+<div class="break"></div>
+
+<div class="idea-field">
+    <label for="idea">Idea</label>
+    <textarea id="idea" required></textarea>
+
+</div>
+
+    <button>Submit</button>
 </form>
 
 </div>
