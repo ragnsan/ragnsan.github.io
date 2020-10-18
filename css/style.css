@@ -255,10 +255,12 @@ ul li a:hover {
 }
 
 .form-container {
-    display: flex;
-    flex-direction: row;
+    display: block;
     justify-content: center;
     border: solid red 2px;
+    width: 60%;
+    margin: 0 auto;
+    
 }
 
 .break {
@@ -267,7 +269,11 @@ ul li a:hover {
 
 }
 
-.idea-field {
+.name-field, .email-field, .idea-field  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
     
     
     
