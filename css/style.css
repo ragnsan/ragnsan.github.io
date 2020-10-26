@@ -327,7 +327,10 @@ ul li a:hover {
 }
 
 .email-container {
-    align-items: flex-end;
+    align-items: flex-start;
+}
+.email-container input {
+  width: 100%;
 }
 
 .name {
