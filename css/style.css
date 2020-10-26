@@ -44,7 +44,7 @@ header h2 {
 
 
 nav {
- 
+
 }
 
 
@@ -100,8 +100,8 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     padding: 10rem 2rem 0;
-    
-    
+
+
 }
 
 
@@ -116,7 +116,7 @@ ul li a:hover {
     flex-direction: column;
     align-items: center;
 
-    
+
 }
 
 
@@ -135,7 +135,7 @@ ul li a:hover {
     display: flex;
     text-align: left;
     padding: 4rem 0 0.5rem;
-    
+
     color: white;
 }
 
@@ -154,7 +154,7 @@ ul li a:hover {
     font-size: 3rem;
     display: flex;
     justify-content: flex-start;
-    
+
     padding: 4rem 0rem 2rem;
     color: white;
 }
@@ -164,7 +164,7 @@ ul li a:hover {
     display: flex;
 
     justify-content: center;
-    
+
 }
 
 .founders-image-container img {
@@ -215,8 +215,8 @@ ul li a:hover {
 
 #submit-container {
     background-color: #D9D9D9;
-    
-    
+
+
 }
 
 #submit-container h2 {
@@ -243,7 +243,7 @@ ul li a:hover {
 
 .submit-1-container, .submit-2-container, .submit-3-container {
     flex: 1;
-    
+
 }
 
 
@@ -254,8 +254,8 @@ ul li a:hover {
     color: #284B63;
     display: flex;
     justify-content: center;
-    
-} 
+
+}
 
 .submit-description-1, .submit-description-2, .submit-description-3 {
     font-size: 1.75rem;
@@ -263,8 +263,8 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    
-    
+
+
 }
 
 .submit-image-1, .submit-image-2, .submit-image-3 {
@@ -284,8 +284,8 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     background-color: #3C6E71;
-    
-    
+
+
 }
 
 .form-headings h2 {
@@ -303,7 +303,7 @@ ul li a:hover {
     padding: 1rem;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .form-container {
@@ -312,12 +312,12 @@ ul li a:hover {
     width: 50%;
     margin: 0 auto;
     padding: 2rem 0 0;
-    
+
 }
 
 .contact-container {
     display: flex;
-    
+
 }
 
 .name-container, .email-container, .idea-container {
@@ -327,7 +327,10 @@ ul li a:hover {
 }
 
 .email-container {
-    align-items: flex-end;
+    align-items: flex-start;
+}
+.email-container input {
+  width: 100%;
 }
 
 .name {
@@ -341,16 +344,16 @@ input {
     border: none;
     background-color: #c9c9c9;
     border-radius: 10px;
-    
-    
-    
+
+
+
 }
 
 input[type="text"], input[type="email"] {
     padding: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
-    
+
 }
 
 
@@ -360,6 +363,7 @@ textarea {
     resize: none;
     background-color: #c9c9c9;
     border-radius: 10px;
+    font-size: 1.75rem;
 }
 
 label {
@@ -368,7 +372,7 @@ label {
     font-size: 2rem;
     font-weight: 700;
     padding: 2rem 0 1rem;
-    
+
 }
 
 .button-container {
@@ -377,7 +381,7 @@ label {
 
 .idea-button {
     font-size: 2rem;
-    padding: 2rem 6rem; 
+    padding: 2rem 6rem;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     background-color: white;
@@ -398,7 +402,7 @@ label {
     background-color: #C4C4C4;
     display: flex;
     justify-content: center;
-    
+
 }
 
 #success-stories-container img {
@@ -410,15 +414,15 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     width: 50%;
-    
+
 }
 
 .success-stories-content-left {
     diplay: flex;
     align-items: flex-start;
-    
+
 }
 
 .success-stories-content-left h2 {
@@ -449,12 +453,12 @@ label {
 
 .article-button-container {
     padding: 1rem 0 4rem;
-    
+
 }
 
 .article-button {
     font-size: 2rem;
-    padding: 2rem 6rem; 
+    padding: 2rem 6rem;
     font-family: 'Merriweather', serif;
     font-weight: 900;
     background-color: #284B63;
@@ -479,5 +483,71 @@ footer {
     font-family: 'Merriweather', serif;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0 20px 0;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1750px) {
+    #submit-container br {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 1750px) {
+    .founders-image-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .submit-steps-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .name-container input {
+      width: 100%;
+    }
+}
+@media only screen and (max-width: 820px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      height: 130px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .founders-image-container img {
+      height: 150px;
+      width: 150px;
+    }
+    .submit-steps-container img {
+      height: 250px;
+      width: 150px;
+    }
+    .idea-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5px;
+      width: 10px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    header {
+      height: 150px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    header {
+      height: 200px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    header {
+      height: 250px;
+    }
 }
