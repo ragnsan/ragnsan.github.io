@@ -551,17 +551,31 @@ footer {
     }
     .founders-description-1, .founders-description-2 {
       font-size: 2.75rem;
+      width: 100%;
     }
     .article-button {
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 2rem;
-      height: 15vh;
-      width: 15vw;
     }
     .article-description {
       font-size: 2.75rem;
+    }
+    .test-div {
+      width: 90%
+    }
+    .submit-steps-container {
+      width: 90%
+    }
+    .success-stories-content {
+      width: 90%
+    }
+}
+@media only screen and (max-width: 820px) {
+    .article-button {
+      height: 15vh;
+      width: 15vw;
     }
 }
 @media only screen and (max-width: 550px) {
