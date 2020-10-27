@@ -4,6 +4,10 @@ html {
 
 }
 
+html,body{
+    overflow-x: hidden;
+}
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -577,6 +581,107 @@ footer {
       height: 15vh;
       width: 15vw;
     }
+
+@media only screen and (max-width: 710px) {
+    header h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-image-text h1 {
+        font-size: 4rem;
+    }
+    .hero-image-text h2 {
+        font-size: 2.5rem;
+    }
+
+    #founders-container h2 {
+        font-size: 2.5rem;
+    }
+
+    #founders-container p {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+
+    #founders-container h3 {
+        font-size: 2.5rem;
+        padding: 2rem 0 1rem;
+        
+    }
+
+    .founders-name-1, .founders-name-2 {
+        font-size: 2.5rem;
+    }
+
+    .founders-description-1, .founders-description-2 {
+        font-size: 1.5rem;
+    }
+
+    #submit-container h2 {
+        font-size: 2.5rem;
+        padding: 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+
+    .submit-name-1, .submit-name-2, .submit-name-3 {
+        font-size: 2rem;
+    }
+
+    .submit-description-1, .submit-description-2, .submit-description-3 {
+        font-size: 2rem;
+    }
+
+    .form-headings {
+        width: 95%;
+    }
+
+    .form-headings h2 {
+        font-size: 2.5rem;
+        display: flex;
+        
+ 
+    }
+
+    .form-headings p {
+        font-size: 1.5rem;
+        
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    .success-stories-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .success-stories-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .article-heading {
+        font-size: 1.75rem;
+    }
+
+    .article-description {
+        font-size: 1.5rem;
+    }
+
+    .article-button {
+        height: 20px;
+        width: 40px;
+        font-size: 1rem;
+        
+    }
+}
+
+
+
+
+
+
 }
 @media only screen and (max-width: 550px) {
     .founders-image-container img {
@@ -595,3 +700,4 @@ footer {
       width: 10px;
     }
 }
+
