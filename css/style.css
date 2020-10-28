@@ -297,16 +297,16 @@ ul li a:hover {
     font-size: 3.5rem;
     color: white;
     display: flex;
-    justify-content: center;
-    padding: 4rem 0 0;
+    justify-content: flex-start;
+    padding: 4rem 0 2rem;
 }
 
 .form-headings p {
     font-weight: 700;
     font-size: 2rem;
-    padding: 1rem;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -353,7 +353,7 @@ input {
 
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"], input[type="email"], textarea {
     padding: 1rem;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
@@ -367,7 +367,7 @@ textarea {
     resize: none;
     background-color: #c9c9c9;
     border-radius: 10px;
-    font-size: 1.75rem;
+    
 }
 
 label {
@@ -526,20 +526,56 @@ footer {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      padding-left: 3rem;
+      
     }
     .form-headings p {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      padding-left: 3rem;
+      
     }
     #submit-container h2 {
       padding: 4rem 5rem 4rem;
     }
     .form-container {
-      width: 90%;
+      width: 95%;
     }
+
+    .form-headings {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    
+    .founders-image-container img {
+      width: 80%;
+    }
+
+      #founders-container h2 {
+        font-size: 4rem;
+    }
+
+    #founders-container p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+
+    #founders-container h3 {
+        font-size: 3.5rem;
+        padding: 4rem 0 3rem;
+        
+    }
+
+    .founders-name-1, .founders-name-2 {
+        font-size: 3rem;
+    }
+
+    .founders-description-1, .founders-description-2 {
+        font-size: 2.5rem;
+    }
+
+
     .submit-name-1, .submit-name-2, .submit-name-3 {
         font-weight: 900;
         font-size: 3rem;
@@ -549,14 +585,7 @@ footer {
         font-size: 2.75rem;
         padding: 1rem 2rem 4rem;
     }
-    .founders-name-1, .founders-name-2 {
-      font-weight: 700;
-      font-size: 3rem;
-    }
-    .founders-description-1, .founders-description-2 {
-      font-size: 2.75rem;
-      width: 100%;
-    }
+ 
     .article-button {
       display: flex;
       justify-content: center;
@@ -582,7 +611,18 @@ footer {
       width: 15vw;
     }
 
+    .hero-image-text h1 {
+        font-size: 5.5rem;
+    }
+    .hero-image-text h2 {
+        font-size: 3rem;
+        padding: 1rem 3rem 0 0;
+    }
+
+
 @media only screen and (max-width: 710px) {
+    
+    
     header h2 {
         font-size: 2rem;
     }
@@ -620,8 +660,9 @@ footer {
 
     #submit-container h2 {
         font-size: 2.5rem;
-        padding: 2rem 1rem 2rem;
+        padding: 2rem 0rem 2rem;
         text-align: center;
+        
     }
 
 
@@ -635,12 +676,11 @@ footer {
 
     .form-headings {
         width: 95%;
+        margin: 0 auto;
     }
 
     .form-headings h2 {
         font-size: 2.5rem;
-        display: flex;
-        
  
     }
 
@@ -684,10 +724,42 @@ footer {
 
 }
 @media only screen and (max-width: 550px) {
-    .founders-image-container img {
-      height: 150px;
-      width: 150px;
+
+    header {
+        height: 60px;
     }
+
+    header h2 {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    #hero-image-container {
+        max-height: 50vh;
+    }
+
+    .hero-image-text {
+        display: flex;
+        padding: 4rem 1rem 0;
+    }
+
+    .hero-image-text h1 {
+        font-size: 2.75rem;
+        padding: 0;
+    }
+    .hero-image-text h2 {
+        font-size: 2rem;
+        padding: 0.5rem 0 0;
+    }
+
+
+    #founders-container h3 {
+        padding: 2rem 0 0;
+        font-size: 2.25rem;
+        
+    }
+
+
     .submit-steps-container img {
       height: 250px;
       width: 150px;
@@ -699,5 +771,36 @@ footer {
       height: 5px;
       width: 10px;
     }
+
+    .idea-button {
+        font-size: 1.5rem;
+        padding: 1.75rem 5rem;
+    }
+
+    #submit-container h2 {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding: 4rem 0 2rem;
 }
 
+    .submit-description-1, .submit-description-2, .submit-description-3 {
+        font-size: 1.75rem;
+    }
+
+    .article-button {
+      
+      font-size: 1rem;
+    }
+
+    .article-link {
+        border: solid red;
+        padding: 0;
+        display: inline-block;
+    }
+ 
+}
+
+}
